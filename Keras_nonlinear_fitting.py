@@ -69,7 +69,7 @@ print('End Testing')
 # comment to hide plot of fitting result
 x = np.sort(x)
 y_predict = model.predict(x)
-plt.plot(x_test, y_test, '^b', markersize = 4.0)
-plt.plot(x, y_predict, 'r')
+plt.plot(x_test, y_test, '^b', markersize = 4.0) # testing data set is shown in blue scatters
+plt.plot(x, y_predict, 'r') # fitting line is shown in red solid line
 plt.axis([-1.1, 1.1, -1.1, 1.1])
 plt.show()
